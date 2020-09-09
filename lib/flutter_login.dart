@@ -183,12 +183,12 @@ class __HeaderState extends State<_Header> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
           if (displayLogo)
-            FadeIn(
+            Padding(padding: EdgeInsets.fromLTRB(0, 30, 0, 0), child: FadeIn(
               controller: widget.logoController,
               offset: .25,
               fadeDirection: FadeDirection.topToBottom,
               child: logo,
-            ),
+            )),
           SizedBox(height: gap),
           FadeIn(
             controller: widget.titleController,
