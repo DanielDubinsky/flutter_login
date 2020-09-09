@@ -137,7 +137,7 @@ class __HeaderState extends State<_Header> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    const gap = 5.0;
+    const gap = 30.0;
     final logoHeight = min(widget.height - _titleHeight - gap, kMaxLogoHeight);
     final displayLogo = widget.logoPath != null && logoHeight >= kMinLogoHeight;
 
